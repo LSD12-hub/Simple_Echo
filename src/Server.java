@@ -13,8 +13,10 @@ public class Server {
 
         System.out.println("Connection Established");
 
+        //read data
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
+        //write data
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         
 
